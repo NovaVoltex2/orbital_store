@@ -1,31 +1,54 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "es2023",
-    "lib": ["ES2023", "DOM"],
-    "module": "esnext",
-    "types": ["vite/client"],
-    "skipLibCheck": true,
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
+    /* Target & Environment */
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+
+    /* Module System (Vite best practice) */
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "moduleDetection": "force",
-    "noEmit": true,
+
+    /* JSX */
     "jsx": "react-jsx",
 
-    /* Add these */
+    /* Output */
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+
+    /* Type Safety */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Path Aliases */
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
 
-    /* Linting */
+    /* Import behavior */
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    /* Linting / Code Safety */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Advanced Safety (recommended for large apps) */
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* Compatibility */
+    "ignoreDeprecations": "6.0"
   },
-  "include": ["src"]
+
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

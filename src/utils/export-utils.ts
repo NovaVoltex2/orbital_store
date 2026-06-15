@@ -22,10 +22,10 @@ export const exportToPDF = (data: any[], title: string, fileName: string) => {
 
   autoTable(doc, {
     head: [headers],
-    body: rows,
+    body: rows as any,
     startY: 30,
     theme: 'grid',
-    headStyles: { fillStyle: 'F', fillColor: [0, 53, 102], textColor: [255, 255, 255] },
+    headStyles: { fillColor: [0, 53, 102], textColor: [255, 255, 255] },
     alternateRowStyles: { fillColor: [245, 245, 245] }
   })
 

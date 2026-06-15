@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
 import { Search, FolderOpen, ArrowRight, Grid, List } from 'lucide-react'
 import { useCategories } from '../hooks/use-categories'
-import { cn } from '@/lib/utils'
 
 export function CategoryManagement() {
   const { data: categories, isLoading } = useCategories()

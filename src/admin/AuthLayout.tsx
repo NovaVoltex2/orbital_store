@@ -1,5 +1,5 @@
 import { Link, Navigate, Outlet, useLocation } from "react-router";
-import { LayoutDashboard, Package, LogOut, Store, Menu, User2 } from 'lucide-react'
+import { LogOut, Store, Menu } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { cn } from "@/lib/utils"
