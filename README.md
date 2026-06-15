@@ -1,6 +1,14 @@
 # Orbital Store 🚀
 
-A premium e-commerce foundation built with the absolute latest web technologies.
+ Admin e-commerce foundation built with the absolute latest web technologies.
+
+# Test Credentials
+``` 
+{
+	username:emilys
+	password:emilyspass
+}
+```
 
 ## 🛠️ Tech Stack
 
@@ -47,9 +55,7 @@ orbital_store/
 
 ## ✨ Features
 
-- **Performance First**: Zero-config React Compiler optimization.
-- **Modern CSS**: Leveraging Tailwind 4's CSS-first configuration and OKLCH color spaces.
-- **Premium Design**: Dark-mode first aesthetics with glassmorphism and smooth animations.
+
 - **Type Safe**: Strict TypeScript 6 configuration.
 
 ---
