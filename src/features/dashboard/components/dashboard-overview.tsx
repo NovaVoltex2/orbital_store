@@ -13,7 +13,7 @@ export function DashboardOverview() {
   ]
 
   return (
-    <div className="p-8 space-y-8">
+    <div className="p-4 sm:p-8 space-y-8">
       <div className="flex items-center justify-between">
         <h1 className="text-4xl font-bold tracking-tight text-primary">Dashboard</h1>
       </div>

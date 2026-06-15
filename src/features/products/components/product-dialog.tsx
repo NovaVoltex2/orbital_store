@@ -37,7 +37,7 @@ export function ProductDialog({ product, open, onClose }: ProductDialogProps) {
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] bg-white">
         <DialogHeader>
           <DialogTitle>{isEditing ? 'Edit Product' : 'Create New Product'}</DialogTitle>
         </DialogHeader>

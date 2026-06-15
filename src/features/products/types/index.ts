@@ -13,6 +13,10 @@ export interface Product {
   sku?: string
   shippingInformation?: string
   reviews?: Review[]
+  meta?: {
+	createdAt: string
+	updatedAt: string
+  }
 }
 
 export interface Review {

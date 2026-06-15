@@ -1,5 +1,5 @@
-export const API_BASE_URL = 'https://dummyjson.com'
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
 type FetchOptions = RequestInit & {
   params?: Record<string, string | number>
 }

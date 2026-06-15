@@ -44,6 +44,7 @@ export function ProductTable() {
               <TableHead>Price</TableHead>
               <TableHead>Stock</TableHead>
               <TableHead>Rating</TableHead>
+              <TableHead>Created on</TableHead>
               <TableHead className="text-right">Actions</TableHead>
             </TableRow>
           </TableHeader>
